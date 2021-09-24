@@ -1,8 +1,8 @@
 const apiKey = 'f2a7826c40b49efc70daf5944ea50b36';
-const apiPopularity = 'https://api.themoviedb.org/3/discover/movie';
+const apiCast = 'https://api.themoviedb.org/3/movie/';
 
-const getPopularity = async (id) => {
-    const apiURL = `${apiPopularity}?api_key=${apiKey}&sort_by=vote_count.desc`;
+const getCast = async (id) => {
+    const apiURL = `${apiCast}${id}/credits?api_key=${apiKey}`;
 
     try{
         const response = await fetch (apiURL);
@@ -14,4 +14,4 @@ const getPopularity = async (id) => {
     };
 };
 
-export default getPopularity;
+export default getCast;

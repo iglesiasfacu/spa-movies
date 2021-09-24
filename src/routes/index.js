@@ -1,13 +1,13 @@
-//import Character from "../pages/Characters";
-//import Home from '../pages/Home';
+import Home from '../pages/Home';
+import Movie from "../pages/Movie";
 import Error404 from "../pages/Error404";
 import Header from '../templates/Header';
 import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 
 const routes = {
-    //'/': Home,
-    //'/:id': Movie,
+    '/': Home,
+    '/:id': Movie,
 };
 
 const routesMap = async() => {
