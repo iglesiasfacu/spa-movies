@@ -8,15 +8,15 @@ const Home = async() => {
         <div class="movies">
             <article class="trending-movies">
                 <section class="section-title">
-                    <h2>Trending top</h2>
+                    <h2>Trending Top</h2>
                 </section>
                 <section class="section-movie">
                     ${infoTrending.results.map(movie => `
                         <div class="movie-item">
                             <a href="#/${movie.id}">
-                                <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}" class="card-img-top" alt=${movie.original_title}>
+                                <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}" alt=${movie.original_title}>
                                 <h3>${movie.original_title}</h3>
-                                <p>Vote Average: ${movie.vote_average}</p>
+                                <p>Puntuación: ${movie.vote_average}</p>
                             </a>
                         </div>
                        `
@@ -26,15 +26,15 @@ const Home = async() => {
 
             <article class="popularity-movies">
                 <section class="section-title">
-                    <h2>Most popular</h2>
+                    <h2>Most Popular</h2>
                 </section>
                 <section class="section-movie">
                     ${infoPopularity.results.map(movie => `
                         <div class="movie-item">
                             <a href="#/${movie.id}">
-                                <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}" class="card-img-top" alt=${movie.original_title}>
+                                <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}" alt=${movie.original_title}>
                                 <h3>${movie.original_title}</h3>
-                                <p>Vote Average: ${movie.vote_average}</p>
+                                <p>Puntuación: ${movie.vote_average}</p>
                             </a>
                         </div>
                         `

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
 
 /*general*/
@@ -15,6 +16,7 @@ body {
 }
 
 .header-main a {
+  font-family: "Press Start 2P", cursive;
   margin-left: 20px;
   text-decoration: none;
   color: #fff;
@@ -30,7 +32,7 @@ body {
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
   color: #fff;
@@ -87,24 +89,28 @@ body {
 /*movie*/
 .movie-card {
   display: flex;
-  border-radius: 5px;
-  margin-top: 30px;
+  justify-content: space-between;
+  margin: 50px 20px 0 20px;
 }
 
-.movie-card .movie-img {
+.poster-img {
+  height: auto;
+  overflow: hidden;
+}
+
+.movie-img {
   animation-name: fade;
   animation-duration: 2s;
-  margin-left: 20px;
-  height: auto;
+  margin-right: 10px;
+  height: 750px;
+  border-radius: 5px;
   box-shadow: 6px 6px 30px 17px rgba(0, 0, 0, 0.43);
 }
 
-.movie-card .movie-info {
-  float: right;
+.movie-info {
   background-color: #d8f3dc;
   padding: 10px 20px;
   margin-left: 10px;
-  width: 750px;
   height: auto;
   animation-name: fade;
   animation-duration: 2s;
@@ -114,9 +120,9 @@ body {
 
 .movie-info h2 {
   display: flex;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  padding: 10px 10px;
+  justify-content: center;
   color: #000;
 }
 
@@ -124,30 +130,25 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 15px;
-  padding-left: 20px;
+  padding-left: 30px;
   color: #000;
 }
 
 .movie-info p {
   display: inline-block;
-  align-items: center;
   font-size: 12px;
   padding: 0 20px;
   color: #000;
 }
 
-footer {
+.footer {
   background: no-repeat -webkit-linear-gradient(450deg, #22c2af, #154e48);
   color: #fff;
   text-align: center;
   margin-top: 50px;
   bottom: 0px;
   padding: 30px;
-  border-color: black solid 4px;
-  border-style: solid black 4px;
 }
-
-/**/
 
 @keyframes fade {
   from {
