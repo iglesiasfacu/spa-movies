@@ -63,6 +63,11 @@ body {
   border-radius: 5px;
 }
 
+.movie-item:hover {
+  transition: all 500ms;
+  transform: scale(1.05);
+}
+
 .movie-item h3 {
   display: flex;
   font-size: 19px;
